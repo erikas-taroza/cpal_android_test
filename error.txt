@@ -1,0 +1,26 @@
+12-01 14:17:59.464  3355  3575 I OboeAudio: openStream() OUTPUT -------- OboeVersion1.6.1 --------
+12-01 14:17:59.464  3355  3575 I AAudio  : AAudioStreamBuilder_openStream() called ----------------------------------------
+12-01 14:17:59.464  3355  3575 I AudioStreamBuilder: rate   =  44100, channels  = 2, channelMask = 0x80000003, format   = 5, sharing = SH, dir = OUTPUT
+12-01 14:17:59.464  3355  3575 I AudioStreamBuilder: device =      0, sessionId = -1, perfMode = 10, callback: ON with frames = 0
+12-01 14:17:59.464  3355  3575 I AudioStreamBuilder: usage  =      1, contentType = 2, inputPreset = 6, allowedCapturePolicy = 0
+12-01 14:17:59.464  3355  3575 I AudioStreamBuilder: privacy sensitive = false
+12-01 14:17:59.464  3355  3575 I AudioStreamBuilder: opPackageName = (null)
+12-01 14:17:59.464  3355  3575 I AudioStreamBuilder: attributionTag = (null)
+12-01 14:17:59.464  3355  3575 D AudioStreamBuilder: build() MMAP not used because AAUDIO_PERFORMANCE_MODE_LOW_LATENCY not requested.
+12-01 14:17:59.464  3355  3575 D al_android_tes: PlayerBase::PlayerBase()
+12-01 14:17:59.464  3355  3575 D AudioStreamTrack: open(), request notificationFrames = 0, frameCount = 0
+12-01 14:17:59.464  3355  3575 I AudioTrack: set(): streamType -1, sampleRate 44100, format 0x5, channelMask 0x3, frameCount 0, flags #2, notificationFrames 0, sessionId 0, transferType 1, uid -1, pid -1
+12-01 14:17:59.471  3355  3575 E AudioTrack: createTrack_l(0): AudioFlinger could not create track, status: -12 output 0
+12-01 14:17:59.471  3355  3575 W AudioTrack: removeAudioDeviceCallback removing different callback!
+12-01 14:17:59.471  3355  3575 E AudioStreamTrack: release_l() removeAudioDeviceCallback returned -38
+12-01 14:17:59.471  3355  3575 D AAudioStream: setState(s#41) from 0 to 11
+12-01 14:17:59.472  3355  3575 D AudioTrack: gather(): no metrics gathered, track status=-12
+12-01 14:17:59.472  3355  3575 D AAudioStream: setState(s#41) from 11 to 12
+12-01 14:17:59.472  3355  3575 E AudioStreamTrack: open(), initCheck() returned -12
+12-01 14:17:59.472  3355  3575 D AAudioStream: ~AudioStream(s#41) mPlayerBase strongCount = 1
+12-01 14:17:59.472  3355  3575 D al_android_tes: PlayerBase::~PlayerBase()
+12-01 14:17:59.472  3355  3575 I AAudio  : AAudioStreamBuilder_openStream() returns -896 = AAUDIO_ERROR_INTERNAL for s#0 ----------------
+12-01 14:17:59.472  3355  3575 D OboeAudio: AudioStreamAAudio.open: AAudioStream_Open() returned AAUDIO_ERROR_INTERNAL
+12-01 14:17:59.472  3355  3574 I RustStdoutStderr: thread '<unnamed>' panicked at 'ERR: An error occurred when building the stream. A backend-specific error has occurred: Internal', src/lib.rs:128:11
+12-01 14:17:59.472  3355  3574 I RustStdoutStderr: stack backtrace:
+12-01 14:17:59.476  3355  3574 I RustStdoutStderr: note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
